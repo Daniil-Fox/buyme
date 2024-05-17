@@ -129,6 +129,7 @@ a {
     transition: color .3s ease-out;
 
     @include hover {
+      background: none;
       color: #6fc727;
     }
   }

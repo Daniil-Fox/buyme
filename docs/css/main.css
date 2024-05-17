@@ -191,6 +191,7 @@ a {
 }
 @media (any-hover: hover) {
   .btn--stroke:hover {
+    background: none;
     color: #6fc727;
   }
 }
