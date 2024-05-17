@@ -11,6 +11,12 @@
     font-size: 15px;
 
     color: #101010;
+    transition: color .3s ease-out;
+
+    @include hover {
+      color: #6fc727;
+
+    }
 
     &.active {
       color: #6fc727;
