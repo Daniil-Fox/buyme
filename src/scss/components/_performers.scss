@@ -103,4 +103,20 @@
       text-decoration: underline;
     }
   }
+
+  &.active {
+    .per-item__icon {
+      .fill {
+        fill: #6FC727;
+      }
+
+      .stroke {
+        stroke: #6FC727;
+      }
+    }
+
+    .per-item__title {
+      text-decoration: underline;
+    }
+  }
 }

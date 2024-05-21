@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+      @include('partials/settings-main.html')
+    </main>
+    <aside class="aside">
+      <div class="aside__info">
+        <div class="aside__avatar">
+          <img src="./img/avatars/05.png" alt="">
+        </div>
+        <span class="aside__name">Alexmedia</span>
+        <span class="aside__role">Продавец</span>
+        <a href="#" class="aside__edit">Редактировать профиль</a>
+      </div>
+    </aside>
+    @include('partials/footer.html')
+    <!-- @include('html/h1.html') пример include -->
+  </div>
+</body>
+
+</html>

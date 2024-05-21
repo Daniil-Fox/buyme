@@ -133,6 +133,17 @@ a {
       color: #6fc727;
     }
   }
+
+  &--gray {
+    padding: 14px;
+    width: 100%;
+    background-color: #dbdee8;
+    border-radius: 13px;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    color: #101010;
+  }
 }
 
 .title2 {
@@ -145,5 +156,24 @@ a {
 
   @include small-tablet {
     font-size: 24px;
+  }
+}
+
+.blue-bg {
+  background-color: #f7f8fb;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  padding-bottom: 70px;
+
+  main {
+    grid-column: 8 span;
+  }
+
+  aside {
+    grid-column: 4 span;
   }
 }

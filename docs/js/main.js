@@ -10,7 +10,32 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_sliders_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/sliders.js */ "./src/js/components/sliders.js");
+/* harmony import */ var _components_tabs_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/tabs.js */ "./src/js/components/tabs.js");
+/* harmony import */ var _components_settings_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/settings.js */ "./src/js/components/settings.js");
 
+
+
+
+/***/ }),
+
+/***/ "./src/js/components/settings.js":
+/*!***************************************!*\
+  !*** ./src/js/components/settings.js ***!
+  \***************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+const settingsTabs = document.querySelectorAll(".settings-main__item");
+const settingsContent = document.querySelectorAll(".settings-main__content");
+settingsTabs.forEach(item => {
+  item.addEventListener("click", e => {
+    const dataset = item.dataset.settings;
+    settingsTabs.forEach(el => el.classList.remove("active"));
+    settingsContent.forEach(el => el.classList.remove("active"));
+    document.querySelector(`.settings-main__content[data-settings-content="${dataset}"]`).classList.add("active");
+    item.classList.add("active");
+  });
+});
 
 /***/ }),
 
@@ -54,6 +79,28 @@ window.addEventListener("DOMContentLoaded", () => {
   resizableSwiper("(max-width: 768px)", ".blog__slider", {
     spaceBetween: 30,
     slidesPerView: "auto"
+  });
+});
+
+/***/ }),
+
+/***/ "./src/js/components/tabs.js":
+/*!***********************************!*\
+  !*** ./src/js/components/tabs.js ***!
+  \***********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+const tabs = document.querySelectorAll(".services-hero__tabs .tab");
+const tabsContent = document.querySelectorAll(".services-hero__content");
+tabs.forEach(tab => {
+  tab.addEventListener("click", e => {
+    tabs.forEach(el => el.classList.remove("active"));
+    tabsContent.forEach(el => el.classList.remove("active"));
+    const dataset = tab.dataset.tabCapture;
+    const current = document.querySelector(`.services-hero__content[data-tab-content="${dataset}"]`);
+    current.classList.add("active");
+    tab.classList.add("active");
   });
 });
 

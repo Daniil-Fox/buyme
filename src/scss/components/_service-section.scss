@@ -3,13 +3,13 @@
   padding: 240px 0;
 
 
-  background: radial-gradient(50% 50% at 50% 50%, rgb(223, 238, 237) 0%, rgb(255, 255, 255) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, rgb(223, 238, 237) 0%, transparent 100%);
 
   @include tablet {
     margin: -80px 0;
     padding: 100px 0;
     padding-bottom: 140px;
-    background: radial-gradient(428.69% 50% at 50% 50%, rgb(223, 238, 237) 0%, rgb(255, 255, 255) 100%);
+    background: radial-gradient(428.69% 50% at 50% 50%, rgb(223, 238, 237) 0%, transparent 100%);
   }
 
   &__title {
