@@ -38,7 +38,7 @@
     </div>
 
     <div class="header__right">
-      <a href="#" class="header__link">
+      <a href="#" class="header__link login-btn">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_20624_667)">
             <path
@@ -53,7 +53,7 @@
         <span>Войти</span>
       </a>
 
-      <a href="#" class="header__link">
+      <a href="#" class="header__link signin-btn">
         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_20624_663)">
             <path
@@ -225,7 +225,9 @@
       <div class="header-mob__burger">
         <div class="line"></div>
       </div>
-      <a href="#" class="header__logo">buyme.<span>rpo</span></a>
+      <a href="#" class="header__logo">
+        <img src="./img/logo.svg" alt="">
+      </a>
     </div>
     <div class="header-mob__right">
       <a href="#" class="header-mob__link">
@@ -273,276 +275,288 @@
     <main class="main ">
       <section class="services-hero">
   <div class="container">
-    <div class="services-hero__tabs">
-      <a href="#" class="performers__item tab per-item active" data-tab-capture="design">
-        <div class="per-item__content">
-          <div class="per-item__icon">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_20624_546)">
-                <path class="fill"
-                  d="M30.6498 29.8373L23.1196 15.0588C22.9704 14.7659 22.6696 14.5818 22.3419 14.5818H17.653C17.3252 14.5818 17.0244 14.7659 16.8752 15.0588L9.34504 29.8373C9.21885 30.0858 9.21806 30.3794 9.34425 30.6278L11.7681 35.4119V39.127C11.7681 39.6096 12.1585 40 12.6411 40H27.3538C27.8363 40 28.2268 39.6096 28.2268 39.127V35.4119L30.6506 30.6278C30.7768 30.3794 30.776 30.0858 30.6498 29.8373ZM19.9974 27.1834C20.5974 27.1834 21.0863 27.6715 21.0863 28.2715C21.0863 28.8723 20.5974 29.3604 19.9974 29.3604C19.3974 29.3604 18.9085 28.8723 18.9085 28.2715C18.9085 27.6715 19.3974 27.1834 19.9974 27.1834ZM26.4808 38.254H13.5141V36.0762H26.4808V38.254ZM26.8181 34.3302H13.1768L11.1022 30.235L18.1879 16.3278H19.1244V25.5754C17.9871 25.9437 17.1625 27.0127 17.1625 28.2715C17.1625 29.835 18.4339 31.1064 19.9974 31.1064C21.5609 31.1064 22.8323 29.835 22.8323 28.2715C22.8323 27.0127 22.0077 25.9437 20.8704 25.5754V16.3278H21.8069L28.8927 30.235L26.8181 34.3302Z" />
-                <path class="fill"
-                  d="M17.7391 4.28721C10.8042 5.27451 5.27163 10.8071 4.28433 17.742C4.22242 18.1777 3.86369 18.2642 3.43671 18.2642C3.39544 18.2642 3.34623 18.2817 3.30417 18.2753C2.82718 18.2071 2.48829 17.9729 2.55575 17.4959C3.09544 13.7047 4.81925 10.2626 7.53909 7.54197C8.95734 6.12372 10.5716 4.97689 12.3296 4.12689H2.06052C1.57798 4.12689 1.1875 3.73642 1.1875 3.25388C1.1875 2.77134 1.57798 2.38086 2.06052 2.38086H17.6161C18.0986 2.38086 18.3668 2.77134 18.3668 3.25388C18.3668 3.28245 18.3643 3.32848 18.3619 3.35626C18.4073 3.81895 18.2034 4.22134 17.7391 4.28721Z" />
-                <path class="fill"
-                  d="M38.8065 3.25404C38.8065 3.73658 38.416 4.12706 37.9335 4.12706H27.6644C29.4224 4.97706 31.0367 6.12388 32.4549 7.54214C35.1748 10.2628 36.8986 13.7048 37.4383 17.4961C37.5057 17.9731 37.22 18.2455 36.743 18.3137C36.701 18.3193 36.5651 18.2605 36.5238 18.2605C36.0968 18.2605 35.7716 18.1779 35.7097 17.7422C34.7224 10.8073 29.1898 5.27475 22.2549 4.28745C21.7906 4.22158 21.6748 3.82801 21.72 3.36531C21.7176 3.33753 21.7125 3.28269 21.7125 3.25412C21.7125 2.77158 21.8954 2.3811 22.3779 2.3811H37.9335C38.416 2.38102 38.8065 2.7715 38.8065 3.25404Z" />
-                <path class="fill"
-                  d="M22.3771 6.50794H17.6152C17.1331 6.50794 16.7422 6.11706 16.7422 5.63492V0.873016C16.7422 0.390873 17.1331 0 17.6152 0H22.3771C22.8593 0 23.2501 0.390873 23.2501 0.873016V5.63492C23.2501 6.11706 22.8593 6.50794 22.3771 6.50794ZM18.4882 4.7619H21.5041V1.74603H18.4882V4.7619Z" />
-                <path class="fill"
-                  d="M39.1271 23.254H34.3652C33.8831 23.254 33.4922 22.8632 33.4922 22.381V17.6191C33.4922 17.137 33.8831 16.7461 34.3652 16.7461H39.1271C39.6093 16.7461 40.0001 17.137 40.0001 17.6191V22.381C40.0001 22.8632 39.6093 23.254 39.1271 23.254ZM35.2382 21.508H38.2541V18.4921H35.2382V21.508Z" />
-                <path class="fill"
-                  d="M5.63492 23.254H0.873016C0.390873 23.254 0 22.8632 0 22.381V17.6191C0 17.137 0.390873 16.7461 0.873016 16.7461H5.63492C6.11706 16.7461 6.50794 17.137 6.50794 17.6191V22.381C6.50794 22.8632 6.11706 23.254 5.63492 23.254ZM1.74603 21.508H4.7619V18.4921H1.74603V21.508Z"
-                  class="fill" />
-              </g>
-              <defs>
-                <clipPath id="clip0_20624_546">
-                  <rect width="40" height="40" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
+    <div class="swiper services-hero__slider">
+      <div class="services-hero__tabs swiper-wrapper">
+        <a href="#" class="performers__item swiper-slide tab per-item active" data-tab-capture="design">
+          <div class="per-item__content">
+            <div class="per-item__icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_20624_546)">
+                  <path class="fill"
+                    d="M30.6498 29.8373L23.1196 15.0588C22.9704 14.7659 22.6696 14.5818 22.3419 14.5818H17.653C17.3252 14.5818 17.0244 14.7659 16.8752 15.0588L9.34504 29.8373C9.21885 30.0858 9.21806 30.3794 9.34425 30.6278L11.7681 35.4119V39.127C11.7681 39.6096 12.1585 40 12.6411 40H27.3538C27.8363 40 28.2268 39.6096 28.2268 39.127V35.4119L30.6506 30.6278C30.7768 30.3794 30.776 30.0858 30.6498 29.8373ZM19.9974 27.1834C20.5974 27.1834 21.0863 27.6715 21.0863 28.2715C21.0863 28.8723 20.5974 29.3604 19.9974 29.3604C19.3974 29.3604 18.9085 28.8723 18.9085 28.2715C18.9085 27.6715 19.3974 27.1834 19.9974 27.1834ZM26.4808 38.254H13.5141V36.0762H26.4808V38.254ZM26.8181 34.3302H13.1768L11.1022 30.235L18.1879 16.3278H19.1244V25.5754C17.9871 25.9437 17.1625 27.0127 17.1625 28.2715C17.1625 29.835 18.4339 31.1064 19.9974 31.1064C21.5609 31.1064 22.8323 29.835 22.8323 28.2715C22.8323 27.0127 22.0077 25.9437 20.8704 25.5754V16.3278H21.8069L28.8927 30.235L26.8181 34.3302Z" />
+                  <path class="fill"
+                    d="M17.7391 4.28721C10.8042 5.27451 5.27163 10.8071 4.28433 17.742C4.22242 18.1777 3.86369 18.2642 3.43671 18.2642C3.39544 18.2642 3.34623 18.2817 3.30417 18.2753C2.82718 18.2071 2.48829 17.9729 2.55575 17.4959C3.09544 13.7047 4.81925 10.2626 7.53909 7.54197C8.95734 6.12372 10.5716 4.97689 12.3296 4.12689H2.06052C1.57798 4.12689 1.1875 3.73642 1.1875 3.25388C1.1875 2.77134 1.57798 2.38086 2.06052 2.38086H17.6161C18.0986 2.38086 18.3668 2.77134 18.3668 3.25388C18.3668 3.28245 18.3643 3.32848 18.3619 3.35626C18.4073 3.81895 18.2034 4.22134 17.7391 4.28721Z" />
+                  <path class="fill"
+                    d="M38.8065 3.25404C38.8065 3.73658 38.416 4.12706 37.9335 4.12706H27.6644C29.4224 4.97706 31.0367 6.12388 32.4549 7.54214C35.1748 10.2628 36.8986 13.7048 37.4383 17.4961C37.5057 17.9731 37.22 18.2455 36.743 18.3137C36.701 18.3193 36.5651 18.2605 36.5238 18.2605C36.0968 18.2605 35.7716 18.1779 35.7097 17.7422C34.7224 10.8073 29.1898 5.27475 22.2549 4.28745C21.7906 4.22158 21.6748 3.82801 21.72 3.36531C21.7176 3.33753 21.7125 3.28269 21.7125 3.25412C21.7125 2.77158 21.8954 2.3811 22.3779 2.3811H37.9335C38.416 2.38102 38.8065 2.7715 38.8065 3.25404Z" />
+                  <path class="fill"
+                    d="M22.3771 6.50794H17.6152C17.1331 6.50794 16.7422 6.11706 16.7422 5.63492V0.873016C16.7422 0.390873 17.1331 0 17.6152 0H22.3771C22.8593 0 23.2501 0.390873 23.2501 0.873016V5.63492C23.2501 6.11706 22.8593 6.50794 22.3771 6.50794ZM18.4882 4.7619H21.5041V1.74603H18.4882V4.7619Z" />
+                  <path class="fill"
+                    d="M39.1271 23.254H34.3652C33.8831 23.254 33.4922 22.8632 33.4922 22.381V17.6191C33.4922 17.137 33.8831 16.7461 34.3652 16.7461H39.1271C39.6093 16.7461 40.0001 17.137 40.0001 17.6191V22.381C40.0001 22.8632 39.6093 23.254 39.1271 23.254ZM35.2382 21.508H38.2541V18.4921H35.2382V21.508Z" />
+                  <path class="fill"
+                    d="M5.63492 23.254H0.873016C0.390873 23.254 0 22.8632 0 22.381V17.6191C0 17.137 0.390873 16.7461 0.873016 16.7461H5.63492C6.11706 16.7461 6.50794 17.137 6.50794 17.6191V22.381C6.50794 22.8632 6.11706 23.254 5.63492 23.254ZM1.74603 21.508H4.7619V18.4921H1.74603V21.508Z"
+                    class="fill" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_20624_546">
+                    <rect width="40" height="40" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <span class="per-item__title">Дизайн</span>
           </div>
-          <span class="per-item__title">Дизайн</span>
-        </div>
-      </a>
-      <a href="#" class="performers__item tab per-item" data-tab-capture="IT">
-        <div class="per-item__content">
-          <div class="per-item__icon">
-            <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_20624_575)">
+        </a>
+        <a href="#" class="performers__item swiper-slide tab per-item" data-tab-capture="IT">
+          <div class="per-item__content">
+            <div class="per-item__icon">
+              <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_20624_575)">
+                  <path
+                    d="M36.9677 39.1406C38.2835 39.1406 39.3503 38.0739 39.3503 36.758V3.24203C39.3503 1.92617 38.2836 0.859375 36.9677 0.859375H3.53109C2.21516 0.859375 1.14844 1.92609 1.14844 3.24203V36.758C1.14844 38.0739 2.21516 39.1406 3.53109 39.1406H36.9677Z"
+                    class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M1.14844 10.3899H39.3503" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20.2109 5.62476H34.5862" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M27.3586 24.7654C27.3586 24.3201 27.3055 23.8882 27.2276 23.4655L29.6558 22.0636L27.2731 17.9367L24.8265 19.3492C24.1709 18.7899 23.4216 18.3497 22.5934 18.0553V15.2349H17.828V18.0553C16.9997 18.3498 16.2505 18.7899 15.5949 19.3492L13.1483 17.9367L10.7656 22.0636L13.1938 23.4655C13.1159 23.8882 13.0628 24.3202 13.0628 24.7654C13.0628 25.2107 13.1159 25.6426 13.1938 26.0653L10.7656 27.4672L13.1483 31.5941L15.5949 30.1816C16.2505 30.7409 16.9998 31.1811 17.828 31.4756V34.296H22.5934V31.4756C23.4217 31.181 24.1709 30.7409 24.8265 30.1816L27.2731 31.5941L29.6558 27.4672L27.2276 26.0653C27.3055 25.6426 27.3586 25.2107 27.3586 24.7654Z"
+                    class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M21.1079 26.974C22.3275 26.4796 22.9154 25.0901 22.421 23.8706C21.9266 22.651 20.5372 22.0631 19.3176 22.5575C18.098 23.0519 17.5102 24.4413 18.0045 25.6609C18.4989 26.8805 19.8884 27.4684 21.1079 26.974Z"
+                    class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <circle cx="15.5234" cy="5.7041" r="0.859375" class="fill" />
+                  <circle cx="10.9141" cy="5.7041" r="0.859375" class="fill" />
+                  <circle cx="6.39062" cy="5.7041" r="0.859375" class="fill" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_20624_575">
+                    <rect width="40" height="40" fill="white" transform="translate(0.25)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <span class="per-item__title">Разработка<br>и IT</span>
+          </div>
+        </a>
+
+        <a href="#" class="performers__item swiper-slide tab per-item" data-tab-capture="SEO">
+          <div class="per-item__content">
+            <div class="per-item__icon">
+              <svg width="41" height="36" viewBox="0 0 41 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M36.9677 39.1406C38.2835 39.1406 39.3503 38.0739 39.3503 36.758V3.24203C39.3503 1.92617 38.2836 0.859375 36.9677 0.859375H3.53109C2.21516 0.859375 1.14844 1.92609 1.14844 3.24203V36.758C1.14844 38.0739 2.21516 39.1406 3.53109 39.1406H36.9677Z"
+                  d="M1.10938 8.38184V31.5194C1.10938 33.2383 2.50281 34.6317 4.22164 34.6317H36.2783C37.9972 34.6317 39.3905 33.2382 39.3905 31.5194V8.38184H1.10938Z"
                   class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
                   stroke-linejoin="round" />
-                <path d="M1.14844 10.3899H39.3503" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                <path
+                  d="M39.3906 8.38191V4.48043C39.3906 2.76152 37.9972 1.36816 36.2784 1.36816H4.22164C2.50281 1.36816 1.10938 2.76152 1.10938 4.48043V8.38191H39.3906Z"
+                  class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M14.5727 13.1157H12.0781V19.036H14.5727" class="stroke" stroke-width="2" stroke-miterlimit="10"
                   stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M20.2109 5.62476H34.5862" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                <path d="M14.3887 16.0759H12.0781" class="stroke" stroke-width="2" stroke-miterlimit="10"
                   stroke-linecap="round" stroke-linejoin="round" />
                 <path
-                  d="M27.3586 24.7654C27.3586 24.3201 27.3055 23.8882 27.2276 23.4655L29.6558 22.0636L27.2731 17.9367L24.8265 19.3492C24.1709 18.7899 23.4216 18.3497 22.5934 18.0553V15.2349H17.828V18.0553C16.9997 18.3498 16.2505 18.7899 15.5949 19.3492L13.1483 17.9367L10.7656 22.0636L13.1938 23.4655C13.1159 23.8882 13.0628 24.3202 13.0628 24.7654C13.0628 25.2107 13.1159 25.6426 13.1938 26.0653L10.7656 27.4672L13.1483 31.5941L15.5949 30.1816C16.2505 30.7409 16.9998 31.1811 17.828 31.4756V34.296H22.5934V31.4756C23.4217 31.181 24.1709 30.7409 24.8265 30.1816L27.2731 31.5941L29.6558 27.4672L27.2276 26.0653C27.3055 25.6426 27.3586 25.2107 27.3586 24.7654Z"
+                  d="M9.15906 13.7028C9.15906 13.7028 8.08695 12.8017 6.82266 13.1825C5.6618 13.5321 5.49937 14.8707 6.3393 15.4183C6.3393 15.4183 7.16344 15.786 8.0775 16.1232C10.2778 16.9348 9.33 19.0635 7.55867 19.0635C6.67164 19.0635 5.92719 18.675 5.47656 18.1778"
                   class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
                   stroke-linejoin="round" />
                 <path
-                  d="M21.1079 26.974C22.3275 26.4796 22.9154 25.0901 22.421 23.8706C21.9266 22.651 20.5372 22.0631 19.3176 22.5575C18.098 23.0519 17.5102 24.4413 18.0045 25.6609C18.4989 26.8805 19.8884 27.4684 21.1079 26.974Z"
+                  d="M20.089 19.0635C21.7389 19.0635 23.0764 17.726 23.0764 16.076C23.0764 14.4261 21.7389 13.0886 20.089 13.0886C18.4391 13.0886 17.1016 14.4261 17.1016 16.076C17.1016 17.726 18.4391 19.0635 20.089 19.0635Z"
                   class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
                   stroke-linejoin="round" />
-                <circle cx="15.5234" cy="5.7041" r="0.859375" class="fill" />
-                <circle cx="10.9141" cy="5.7041" r="0.859375" class="fill" />
-                <circle cx="6.39062" cy="5.7041" r="0.859375" class="fill" />
-              </g>
-              <defs>
-                <clipPath id="clip0_20624_575">
-                  <rect width="40" height="40" fill="white" transform="translate(0.25)" />
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-          <span class="per-item__title">Разработка<br>и IT</span>
-        </div>
-      </a>
-
-      <a href="#" class="performers__item tab per-item" data-tab-capture="SEO">
-        <div class="per-item__content">
-          <div class="per-item__icon">
-            <svg width="41" height="36" viewBox="0 0 41 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M1.10938 8.38184V31.5194C1.10938 33.2383 2.50281 34.6317 4.22164 34.6317H36.2783C37.9972 34.6317 39.3905 33.2382 39.3905 31.5194V8.38184H1.10938Z"
-                class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-              <path
-                d="M39.3906 8.38191V4.48043C39.3906 2.76152 37.9972 1.36816 36.2784 1.36816H4.22164C2.50281 1.36816 1.10938 2.76152 1.10938 4.48043V8.38191H39.3906Z"
-                class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M14.5727 13.1157H12.0781V19.036H14.5727" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M14.3887 16.0759H12.0781" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                stroke-linecap="round" stroke-linejoin="round" />
-              <path
-                d="M9.15906 13.7028C9.15906 13.7028 8.08695 12.8017 6.82266 13.1825C5.6618 13.5321 5.49937 14.8707 6.3393 15.4183C6.3393 15.4183 7.16344 15.786 8.0775 16.1232C10.2778 16.9348 9.33 19.0635 7.55867 19.0635C6.67164 19.0635 5.92719 18.675 5.47656 18.1778"
-                class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-              <path
-                d="M20.089 19.0635C21.7389 19.0635 23.0764 17.726 23.0764 16.076C23.0764 14.4261 21.7389 13.0886 20.089 13.0886C18.4391 13.0886 17.1016 14.4261 17.1016 16.076C17.1016 17.726 18.4391 19.0635 20.089 19.0635Z"
-                class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M35.0041 30.6946H23.9219" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M33.3438 23.6267V30.6946" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M29.4609 25.1904V30.6947" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M25.5859 27.0989V30.6947" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M26.6719 13.6052H35.0035" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M26.6719 17.5771H35.0035" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                stroke-linecap="round" stroke-linejoin="round" />
-              <path
-                d="M17.4825 30.6946H7.03906C6.17609 30.6946 5.47656 29.9951 5.47656 29.1321V25.2378C5.47656 24.3748 6.17609 23.6753 7.03906 23.6753H17.4825C18.3455 23.6753 19.045 24.3748 19.045 25.2378V29.1321C19.045 29.9951 18.3455 30.6946 17.4825 30.6946Z"
-                class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </div>
-          <span class="per-item__title">SEO&nbsp;продвижение и реклама</span>
-        </div>
-      </a>
-
-      <a href="#" class="performers__item tab per-item" data-tab-capture="media">
-        <div class="per-item__content">
-          <div class="per-item__icon">
-            <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_20624_631)">
-                <path d="M4.3125 39.1405C4.3125 39.1405 10.9205 33.3643 20.7487 33.3643" class="stroke" stroke-width="2"
-                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M37.1862 39.1405C37.1862 39.1405 30.5782 33.3643 20.75 33.3643" class="stroke" stroke-width="2"
-                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M32.739 7.21313H37.369C38.762 7.21313 39.8906 8.34173 39.8906 9.73478V30.8427C39.8906 32.2357 38.762 33.3643 37.369 33.3643H4.13102C2.73797 33.3643 1.60938 32.2357 1.60938 30.8427V9.73478C1.60938 8.34173 2.73797 7.21313 4.13102 7.21313H8.76102"
-                  class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
-                <path d="M6.375 26.3384H34.9975" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                <path d="M35.0041 30.6946H23.9219" class="stroke" stroke-width="2" stroke-miterlimit="10"
                   stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M28.9688 24.0735V28.6033" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                <path d="M33.3438 23.6267V30.6946" class="stroke" stroke-width="2" stroke-miterlimit="10"
                   stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M24.5589 10.025L16.9375 5.62476V14.4251L24.5589 10.025Z" class="stroke" stroke-width="2"
-                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M29.4609 25.1904V30.6947" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M25.5859 27.0989V30.6947" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M26.6719 13.6052H35.0035" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M26.6719 17.5771H35.0035" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
                 <path
-                  d="M30.4293 19.1904H11.0643C9.79047 19.1904 8.75781 18.1577 8.75781 16.8839V3.16586C8.75781 1.89203 9.79047 0.859375 11.0643 0.859375H30.4293C31.7031 0.859375 32.7358 1.89203 32.7358 3.16586V16.8839C32.7358 18.1577 31.7031 19.1904 30.4293 19.1904Z"
+                  d="M17.4825 30.6946H7.03906C6.17609 30.6946 5.47656 29.9951 5.47656 29.1321V25.2378C5.47656 24.3748 6.17609 23.6753 7.03906 23.6753H17.4825C18.3455 23.6753 19.045 24.3748 19.045 25.2378V29.1321C19.045 29.9951 18.3455 30.6946 17.4825 30.6946Z"
                   class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
                   stroke-linejoin="round" />
-              </g>
-              <defs>
-                <clipPath id="clip0_20624_631">
-                  <rect width="40" height="40" fill="white" transform="translate(0.75)" />
-                </clipPath>
-              </defs>
-            </svg>
+              </svg>
+            </div>
+            <span class="per-item__title">SEO&nbsp;продвижение и реклама</span>
           </div>
-          <span class="per-item__title">Аудио, видео, съемка</span>
-        </div>
-      </a>
+        </a>
 
-      <a href="#" class="performers__item tab per-item" data-tab-capture="socials">
-        <div class="per-item__content">
-          <div class="per-item__icon">
-            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M15.3141 3.53296H2.44781C1.57055 3.53296 0.859375 4.24413 0.859375 5.1214V14.652C0.859375 15.5293 1.57055 16.2405 2.44781 16.2405H4.03625V20.2116L8.80156 16.2405H15.3141"
-                class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-              <path
-                d="M9.59471 29.1011L9.06478 28.5711C8.18674 27.6931 6.76314 27.6931 5.8851 28.5711C5.00705 29.4492 5.00705 30.8728 5.8851 31.7508L9.59479 35.4605L13.3045 31.7508C14.1825 30.8728 14.1825 29.4492 13.3045 28.5711C12.4264 27.6931 11.0028 27.6931 10.1248 28.5711L9.59471 29.1011Z"
-                class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-              <path
-                d="M28.8145 11.4753H32.7847C34.3016 11.4753 35.4323 12.874 35.1145 14.3572L33.753 20.711C33.5176 21.8096 32.5467 22.5944 31.4232 22.5944H25.3244C25.0108 22.5944 24.7042 22.5016 24.4433 22.3276L22.4608 21.006H20.0781V11.4753H22.4608L24.1361 10.3585C24.578 10.0638 24.8434 9.56791 24.8434 9.03682V5.12158H25.6377C27.3922 5.12158 28.8145 6.54393 28.8145 8.29846V11.4753Z"
-                class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-              <path
-                d="M15.3125 3.53305V24.1827C15.3125 25.4986 16.3792 26.5653 17.6952 26.5653H29.6084V31.3306L34.3738 26.5653H36.7564C38.0723 26.5653 39.1391 25.4986 39.1391 24.1827V3.53305C39.139 2.21711 38.0723 1.15039 36.7563 1.15039H17.6952C16.3792 1.15039 15.3125 2.21711 15.3125 3.53305Z"
-                class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-              <path
-                d="M15.0749 23.5474H2.44781C1.57055 23.5474 0.859375 24.2585 0.859375 25.1358V37.8433C0.859375 38.7205 1.57055 39.4317 2.44781 39.4317H16.7437C17.6209 39.4317 18.3321 38.7205 18.3321 37.8432V36.2548L22.3032 31.4895H18.3321V26.8917"
-                class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+        <a href="#" class="performers__item swiper-slide tab per-item" data-tab-capture="media">
+          <div class="per-item__content">
+            <div class="per-item__icon">
+              <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_20624_631)">
+                  <path d="M4.3125 39.1405C4.3125 39.1405 10.9205 33.3643 20.7487 33.3643" class="stroke"
+                    stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M37.1862 39.1405C37.1862 39.1405 30.5782 33.3643 20.75 33.3643" class="stroke"
+                    stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M32.739 7.21313H37.369C38.762 7.21313 39.8906 8.34173 39.8906 9.73478V30.8427C39.8906 32.2357 38.762 33.3643 37.369 33.3643H4.13102C2.73797 33.3643 1.60938 32.2357 1.60938 30.8427V9.73478C1.60938 8.34173 2.73797 7.21313 4.13102 7.21313H8.76102"
+                    class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                  <path d="M6.375 26.3384H34.9975" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M28.9688 24.0735V28.6033" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M24.5589 10.025L16.9375 5.62476V14.4251L24.5589 10.025Z" class="stroke" stroke-width="2"
+                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M30.4293 19.1904H11.0643C9.79047 19.1904 8.75781 18.1577 8.75781 16.8839V3.16586C8.75781 1.89203 9.79047 0.859375 11.0643 0.859375H30.4293C31.7031 0.859375 32.7358 1.89203 32.7358 3.16586V16.8839C32.7358 18.1577 31.7031 19.1904 30.4293 19.1904Z"
+                    class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_20624_631">
+                    <rect width="40" height="40" fill="white" transform="translate(0.75)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <span class="per-item__title">Аудио, видео, съемка</span>
           </div>
-          <span class="per-item__title">Соцсети и реклама</span>
-        </div>
-      </a>
+        </a>
 
-      <a href="#" class="performers__item tab per-item" data-tab-capture="texts">
-        <div class="per-item__content">
-          <div class="per-item__icon">
-            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_20624_587)">
+        <a href="#" class="performers__item swiper-slide tab per-item" data-tab-capture="socials">
+          <div class="per-item__content">
+            <div class="per-item__icon">
+              <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M29.8606 17.9085V10.7605H10.6406V17.9085L13.0233 15.5258H17.868V27.5185L15.4853 29.9011H25.0159L22.6333 27.5185V15.5258H27.478L29.8606 17.9085Z"
+                  d="M15.3141 3.53296H2.44781C1.57055 3.53296 0.859375 4.24413 0.859375 5.1214V14.652C0.859375 15.5293 1.57055 16.2405 2.44781 16.2405H4.03625V20.2116L8.80156 16.2405H15.3141"
                   class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
                   stroke-linejoin="round" />
-                <path d="M5.87469 1.15039H1.10938V5.9157H5.87469V1.15039Z" class="stroke" stroke-width="2"
-                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M5.87469 34.6663H1.10938V39.4316H5.87469V34.6663Z" class="stroke" stroke-width="2"
-                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M39.3903 1.15039H34.625V5.9157H39.3903V1.15039Z" class="stroke" stroke-width="2"
-                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M39.3903 34.6663H34.625V39.4316H39.3903V34.6663Z" class="stroke" stroke-width="2"
-                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M5.875 3.53296H34.6256" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M37.0078 5.91577V34.6664" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M34.6256 37.0491H5.875" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M3.49219 34.6664V5.91577" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linecap="round" stroke-linejoin="round" />
-              </g>
-              <defs>
-                <clipPath id="clip0_20624_587">
-                  <rect width="40" height="40" fill="white" transform="translate(0.25 0.291016)" />
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-          <span class="per-item__title">Тексты и переводы</span>
-        </div>
-      </a>
-
-      <a href="#" class="performers__item tab per-item" data-tab-capture="business">
-        <div class="per-item__content">
-          <div class="per-item__icon">
-            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_20624_617)">
-                <path d="M28.1092 9.44686V4.29639H12.3906V9.44686" class="stroke" stroke-width="2"
-                  stroke-miterlimit="10" stroke-linejoin="round" />
-                <path d="M33.3344 18.9336L39.3906 18.1919V9.44678H1.10938V18.1919L7.16562 18.9336" class="stroke"
-                  stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
-                <path d="M11.9297 19.5168L20.2509 20.5358L28.572 19.5168" class="stroke" stroke-width="2"
-                  stroke-miterlimit="10" stroke-linejoin="round" />
-                <path d="M2.82812 18.9731V36.2853H37.6717V18.9731" class="stroke" stroke-width="2"
-                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M2.82812 32.8477H37.6717" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M11.9273 16.2964H7.16406V21.9201H11.9273V16.2964Z" class="stroke" stroke-width="2"
-                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M33.3335 16.2964H28.5703V21.9201H33.3335V16.2964Z" class="stroke" stroke-width="2"
-                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-              </g>
-              <defs>
-                <clipPath id="clip0_20624_617">
-                  <rect width="40" height="40" fill="white" transform="translate(0.25 0.291016)" />
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-          <span class="per-item__title">Бизнеc<br>и жизнь</span>
-        </div>
-      </a>
-
-      <a href="#" class="performers__item tab per-item" data-tab-capture="rest">
-        <div class="per-item__content">
-          <div class="per-item__icon">
-            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_20624_644)">
                 <path
-                  d="M3.47656 31.6347V5.94307C3.47656 4.83135 4.37773 3.93018 5.48945 3.93018H36.0171C37.1288 3.93018 38.03 4.83143 38.03 5.94307V31.6347"
-                  class="stroke" stroke-width="2" stroke-miterlimit="10" />
+                  d="M9.59471 29.1011L9.06478 28.5711C8.18674 27.6931 6.76314 27.6931 5.8851 28.5711C5.00705 29.4492 5.00705 30.8728 5.8851 31.7508L9.59479 35.4605L13.3045 31.7508C14.1825 30.8728 14.1825 29.4492 13.3045 28.5711C12.4264 27.6931 11.0028 27.6931 10.1248 28.5711L9.59471 29.1011Z"
+                  class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
                 <path
-                  d="M39.5416 31.6348H25.2169C25.0746 31.6348 24.9593 31.7501 24.9593 31.8923V33.1381C24.9593 33.2804 24.844 33.3957 24.7017 33.3957H16.7187C16.5765 33.3957 16.4612 33.2804 16.4612 33.1381V31.8923C16.4612 31.7501 16.3459 31.6348 16.2036 31.6348H1.95836C1.76562 31.6348 1.60938 31.791 1.60938 31.9837V33.9565C1.60938 35.4452 2.81617 36.6519 4.30477 36.6519H37.1952C38.6838 36.6519 39.8905 35.4451 39.8905 33.9565V31.9837C39.8906 31.7911 39.7344 31.6348 39.5416 31.6348Z"
-                  class="stroke" stroke-width="2" stroke-miterlimit="10" />
-                <path d="M20.75 22.511V25.0875" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linecap="round" />
-                <path d="M20.75 10.8474V13.424" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linecap="round" />
-                <path d="M25.2969 17.9675H27.8734" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linecap="round" />
-                <path d="M13.6328 17.9675H16.2094" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linecap="round" />
-                <path d="M23.9609 21.1802L25.7829 23.0021" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linecap="round" />
-                <path d="M23.9609 14.7548L25.7829 12.9329" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linecap="round" />
-                <path d="M15.7188 23.0021L17.5407 21.1802" class="stroke" stroke-width="2" stroke-miterlimit="10"
-                  stroke-linecap="round" />
-              </g>
-              <defs>
-                <clipPath id="clip0_20624_644">
-                  <rect width="40" height="40" fill="white" transform="translate(0.75 0.291016)" />
-                </clipPath>
-              </defs>
-            </svg>
+                  d="M28.8145 11.4753H32.7847C34.3016 11.4753 35.4323 12.874 35.1145 14.3572L33.753 20.711C33.5176 21.8096 32.5467 22.5944 31.4232 22.5944H25.3244C25.0108 22.5944 24.7042 22.5016 24.4433 22.3276L22.4608 21.006H20.0781V11.4753H22.4608L24.1361 10.3585C24.578 10.0638 24.8434 9.56791 24.8434 9.03682V5.12158H25.6377C27.3922 5.12158 28.8145 6.54393 28.8145 8.29846V11.4753Z"
+                  class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M15.3125 3.53305V24.1827C15.3125 25.4986 16.3792 26.5653 17.6952 26.5653H29.6084V31.3306L34.3738 26.5653H36.7564C38.0723 26.5653 39.1391 25.4986 39.1391 24.1827V3.53305C39.139 2.21711 38.0723 1.15039 36.7563 1.15039H17.6952C16.3792 1.15039 15.3125 2.21711 15.3125 3.53305Z"
+                  class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M15.0749 23.5474H2.44781C1.57055 23.5474 0.859375 24.2585 0.859375 25.1358V37.8433C0.859375 38.7205 1.57055 39.4317 2.44781 39.4317H16.7437C17.6209 39.4317 18.3321 38.7205 18.3321 37.8432V36.2548L22.3032 31.4895H18.3321V26.8917"
+                  class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <span class="per-item__title">Соцсети и реклама</span>
           </div>
-          <span class="per-item__title">Досуг</span>
-        </div>
-      </a>
+        </a>
+
+        <a href="#" class="performers__item swiper-slide tab per-item" data-tab-capture="texts">
+          <div class="per-item__content">
+            <div class="per-item__icon">
+              <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_20624_587)">
+                  <path
+                    d="M29.8606 17.9085V10.7605H10.6406V17.9085L13.0233 15.5258H17.868V27.5185L15.4853 29.9011H25.0159L22.6333 27.5185V15.5258H27.478L29.8606 17.9085Z"
+                    class="stroke" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M5.87469 1.15039H1.10938V5.9157H5.87469V1.15039Z" class="stroke" stroke-width="2"
+                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M5.87469 34.6663H1.10938V39.4316H5.87469V34.6663Z" class="stroke" stroke-width="2"
+                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M39.3903 1.15039H34.625V5.9157H39.3903V1.15039Z" class="stroke" stroke-width="2"
+                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M39.3903 34.6663H34.625V39.4316H39.3903V34.6663Z" class="stroke" stroke-width="2"
+                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M5.875 3.53296H34.6256" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M37.0078 5.91577V34.6664" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M34.6256 37.0491H5.875" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M3.49219 34.6664V5.91577" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_20624_587">
+                    <rect width="40" height="40" fill="white" transform="translate(0.25 0.291016)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <span class="per-item__title">Тексты и переводы</span>
+          </div>
+        </a>
+
+        <a href="#" class="performers__item swiper-slide tab per-item" data-tab-capture="business">
+          <div class="per-item__content">
+            <div class="per-item__icon">
+              <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_20624_617)">
+                  <path d="M28.1092 9.44686V4.29639H12.3906V9.44686" class="stroke" stroke-width="2"
+                    stroke-miterlimit="10" stroke-linejoin="round" />
+                  <path d="M33.3344 18.9336L39.3906 18.1919V9.44678H1.10938V18.1919L7.16562 18.9336" class="stroke"
+                    stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                  <path d="M11.9297 19.5168L20.2509 20.5358L28.572 19.5168" class="stroke" stroke-width="2"
+                    stroke-miterlimit="10" stroke-linejoin="round" />
+                  <path d="M2.82812 18.9731V36.2853H37.6717V18.9731" class="stroke" stroke-width="2"
+                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M2.82812 32.8477H37.6717" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M11.9273 16.2964H7.16406V21.9201H11.9273V16.2964Z" class="stroke" stroke-width="2"
+                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M33.3335 16.2964H28.5703V21.9201H33.3335V16.2964Z" class="stroke" stroke-width="2"
+                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_20624_617">
+                    <rect width="40" height="40" fill="white" transform="translate(0.25 0.291016)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <span class="per-item__title">Бизнеc<br>и жизнь</span>
+          </div>
+        </a>
+
+        <a href="#" class="performers__item swiper-slide tab per-item" data-tab-capture="rest">
+          <div class="per-item__content">
+            <div class="per-item__icon">
+              <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_20624_644)">
+                  <path
+                    d="M3.47656 31.6347V5.94307C3.47656 4.83135 4.37773 3.93018 5.48945 3.93018H36.0171C37.1288 3.93018 38.03 4.83143 38.03 5.94307V31.6347"
+                    class="stroke" stroke-width="2" stroke-miterlimit="10" />
+                  <path
+                    d="M39.5416 31.6348H25.2169C25.0746 31.6348 24.9593 31.7501 24.9593 31.8923V33.1381C24.9593 33.2804 24.844 33.3957 24.7017 33.3957H16.7187C16.5765 33.3957 16.4612 33.2804 16.4612 33.1381V31.8923C16.4612 31.7501 16.3459 31.6348 16.2036 31.6348H1.95836C1.76562 31.6348 1.60938 31.791 1.60938 31.9837V33.9565C1.60938 35.4452 2.81617 36.6519 4.30477 36.6519H37.1952C38.6838 36.6519 39.8905 35.4451 39.8905 33.9565V31.9837C39.8906 31.7911 39.7344 31.6348 39.5416 31.6348Z"
+                    class="stroke" stroke-width="2" stroke-miterlimit="10" />
+                  <path d="M20.75 22.511V25.0875" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                  <path d="M20.75 10.8474V13.424" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                  <path d="M25.2969 17.9675H27.8734" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                  <path d="M13.6328 17.9675H16.2094" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                  <path d="M23.9609 21.1802L25.7829 23.0021" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                  <path d="M23.9609 14.7548L25.7829 12.9329" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                  <path d="M15.7188 23.0021L17.5407 21.1802" class="stroke" stroke-width="2" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_20624_644">
+                    <rect width="40" height="40" fill="white" transform="translate(0.75 0.291016)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <span class="per-item__title">Досуг</span>
+          </div>
+        </a>
+      </div>
     </div>
 
     <div class="services-hero__content services-content active" data-tab-content="design">
@@ -1756,12 +1770,282 @@
     </div>
   </div>
 </section>
+
+      <div class="modal-login modal">
+  <form action="#" class="modal__body form">
+    <span class="modal__title">Вход</span>
+    <label class="form__label" style="position: relative;">
+      <input type="text" class="form__input" placeholder="Логин">
+      <button class="btn-reset form__eye">
+        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_20756_3011)">
+            <path
+              d="M11.7802 7.78025L10.0605 9.5L11.7802 11.2198C12.0735 11.513 12.0735 11.987 11.7802 12.2802C11.634 12.4265 11.442 12.5 11.25 12.5C11.058 12.5 10.866 12.4265 10.7198 12.2802L9 10.5605L7.28025 12.2802C7.134 12.4265 6.942 12.5 6.75 12.5C6.558 12.5 6.366 12.4265 6.21975 12.2802C5.9265 11.987 5.9265 11.513 6.21975 11.2198L7.9395 9.5L6.21975 7.78025C5.9265 7.487 5.9265 7.013 6.21975 6.71975C6.513 6.4265 6.987 6.4265 7.28025 6.71975L9 8.4395L10.7198 6.71975C11.013 6.4265 11.487 6.4265 11.7802 6.71975C12.0735 7.013 12.0735 7.487 11.7802 7.78025ZM18 9.5C18 14.4628 13.9628 18.5 9 18.5C4.03725 18.5 0 14.4628 0 9.5C0 4.53725 4.03725 0.5 9 0.5C13.9628 0.5 18 4.53725 18 9.5ZM16.5 9.5C16.5 5.3645 13.1355 2 9 2C4.8645 2 1.5 5.3645 1.5 9.5C1.5 13.6355 4.8645 17 9 17C13.1355 17 16.5 13.6355 16.5 9.5Z"
+              fill="#BEC2CF" />
+          </g>
+          <defs>
+            <clipPath id="clip0_20756_3011">
+              <rect width="18" height="18" fill="white" transform="translate(0 0.5)" />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+    </label>
+    <label class="form__label" style="position: relative;">
+      <input type="password" class="form__input" placeholder="Пароль">
+      <button class="btn-reset form__eye">
+        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_20756_3013)">
+            <path
+              d="M17.4566 7.56421C16.2933 5.66971 13.6473 2.49121 9.00333 2.49121C4.35933 2.49121 1.71333 5.66971 0.550084 7.56421C0.19048 8.14584 0 8.81614 0 9.49996C0 10.1838 0.19048 10.8541 0.550084 11.4357C1.71333 13.3302 4.35933 16.5087 9.00333 16.5087C13.6473 16.5087 16.2933 13.3302 17.4566 11.4357C17.8162 10.8541 18.0067 10.1838 18.0067 9.49996C18.0067 8.81614 17.8162 8.14584 17.4566 7.56421ZM16.1778 10.6505C15.1788 12.275 12.9176 15.0087 9.00333 15.0087C5.08908 15.0087 2.82783 12.275 1.82883 10.6505C1.61519 10.3047 1.50202 9.90637 1.50202 9.49996C1.50202 9.09356 1.61519 8.69518 1.82883 8.34946C2.82783 6.72496 5.08908 3.99121 9.00333 3.99121C12.9176 3.99121 15.1788 6.72196 16.1778 8.34946C16.3915 8.69518 16.5046 9.09356 16.5046 9.49996C16.5046 9.90637 16.3915 10.3047 16.1778 10.6505Z"
+              fill="#BEC2CF" />
+            <path
+              d="M9 5.75C8.25832 5.75 7.5333 5.96993 6.91661 6.38199C6.29993 6.79404 5.81928 7.37971 5.53545 8.06494C5.25162 8.75016 5.17736 9.50416 5.32206 10.2316C5.46675 10.959 5.8239 11.6272 6.34835 12.1517C6.8728 12.6761 7.54098 13.0333 8.26841 13.1779C8.99584 13.3226 9.74984 13.2484 10.4351 12.9645C11.1203 12.6807 11.706 12.2001 12.118 11.5834C12.5301 10.9667 12.75 10.2417 12.75 9.5C12.7488 8.5058 12.3533 7.55267 11.6503 6.84966C10.9473 6.14666 9.9942 5.75119 9 5.75ZM9 11.75C8.55499 11.75 8.11998 11.618 7.74997 11.3708C7.37996 11.1236 7.09157 10.7722 6.92127 10.361C6.75098 9.9499 6.70642 9.4975 6.79323 9.06105C6.88005 8.62459 7.09434 8.22368 7.40901 7.90901C7.72368 7.59434 8.12459 7.38005 8.56105 7.29323C8.99751 7.20642 9.44991 7.25097 9.86104 7.42127C10.2722 7.59157 10.6236 7.87996 10.8708 8.24997C11.118 8.61998 11.25 9.05499 11.25 9.5C11.25 10.0967 11.0129 10.669 10.591 11.091C10.169 11.5129 9.59674 11.75 9 11.75Z"
+              fill="#BEC2CF" />
+          </g>
+          <defs>
+            <clipPath id="clip0_20756_3013">
+              <rect width="18" height="18" fill="white" transform="translate(0 0.5)" />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+    </label>
+    <button class="btn form__btn modal__btn modal-login__btn btn-reset">Войти</button>
+    <div class="form__row">
+      <label>
+        <input type="checkbox"> Запомнить меня
+      </label>
+      <a href="#">Забыли пароль?</a>
+    </div>
+
+    <span class="modal__or">или</span>
+    <div class="modal__links">
+      <a href="#">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z"
+            fill="#4065D6" />
+          <path
+            d="M36.5313 32.1446C35.9457 32.2269 33.1003 32.1446 32.9523 32.1446C32.2167 32.1521 31.5077 31.8697 30.9786 31.3584C30.3767 30.7795 29.8339 30.1413 29.2582 29.5394C29.0835 29.3559 28.8955 29.1854 28.6957 29.0295C28.2253 28.6709 27.7615 28.7532 27.5411 29.3058C27.3685 29.9048 27.2496 30.518 27.1859 31.138C27.1756 31.3992 27.0621 31.6457 26.8703 31.8233C26.6785 32.0009 26.4241 32.0952 26.1628 32.0854C25.7747 32.1051 25.3865 32.115 25.0017 32.1051C23.6016 32.0979 22.2231 31.7597 20.9786 31.1183C19.6351 30.3675 18.4641 29.3433 17.5411 28.1117C16.0644 26.1618 14.7882 24.0679 13.7319 21.8617C13.676 21.7499 12.5674 19.3913 12.5411 19.2828C12.4724 19.1282 12.4658 18.9531 12.5228 18.7939C12.5798 18.6346 12.6959 18.5034 12.8471 18.4275C13.0444 18.3519 16.699 18.4275 16.7582 18.4275C17.0304 18.4249 17.2962 18.5094 17.517 18.6686C17.7377 18.8278 17.9018 19.0533 17.9852 19.3124C18.6611 21.0355 19.5842 22.6511 20.7253 24.1084C20.8845 24.3048 21.0719 24.4767 21.2813 24.6183C21.3352 24.6704 21.4021 24.7071 21.4751 24.7247C21.548 24.7423 21.6243 24.74 21.6961 24.7182C21.7678 24.6964 21.8325 24.6559 21.8833 24.6007C21.9342 24.5455 21.9693 24.4778 21.9852 24.4045C22.1298 23.9289 22.2149 23.4372 22.2385 22.9407C22.2582 21.9538 22.2385 21.2959 22.1826 20.3091C22.2025 19.9728 22.0889 19.6422 21.8666 19.3891C21.6443 19.136 21.3311 18.9808 20.9951 18.9571C20.7056 18.9078 20.6661 18.6709 20.8668 18.4341C21.2517 17.944 21.7846 17.865 22.3635 17.8354C23.2385 17.7861 24.1168 17.8354 24.9951 17.8354H25.1859C25.5715 17.8344 25.9562 17.873 26.3339 17.9505C26.5548 17.9958 26.7551 18.1112 26.9051 18.2795C27.055 18.4478 27.1466 18.6601 27.1661 18.8847C27.2105 19.1333 27.2303 19.3856 27.2253 19.638C27.2023 20.7137 27.1497 21.7894 27.1365 22.8683C27.1287 23.2945 27.1673 23.7202 27.2517 24.138C27.3799 24.7104 27.7714 24.8551 28.1727 24.4374C28.6728 23.9006 29.1314 23.3266 29.5444 22.7203C30.2871 21.6163 30.8987 20.4296 31.3668 19.1841C31.6201 18.5459 31.8142 18.4045 32.5017 18.4045H36.3799C36.6114 18.4006 36.842 18.4317 37.0642 18.4966C37.1426 18.5175 37.2158 18.5543 37.2794 18.6047C37.343 18.6551 37.3956 18.718 37.4338 18.7896C37.4721 18.8612 37.4952 18.9398 37.5018 19.0207C37.5084 19.1016 37.4982 19.1829 37.4721 19.2597C37.2453 20.085 36.8561 20.8566 36.3273 21.5295C35.5378 22.6446 34.7089 23.7334 33.8997 24.819C33.7973 24.961 33.7039 25.1093 33.6201 25.263C33.3174 25.8091 33.3405 26.1183 33.778 26.5788C34.4819 27.3025 35.2352 27.9834 35.9128 28.7269C36.4126 29.2686 36.8639 29.853 37.2615 30.4736C37.7615 31.2762 37.4556 32.013 36.5313 32.1446Z"
+            fill="white" />
+        </svg>
+      </a>
+      <a href="#">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_20756_3061)">
+            <path
+              d="M25 0C38.75 0 50 11.25 50 25C50 38.75 38.75 50 25 50C11.25 50 0 38.7498 0 25C0 11.2502 11.25 0 25 0Z"
+              fill="#DD4B39" />
+            <path
+              d="M37.6563 20.781V23.5935H40.4687V26.4061H37.6563V29.2186H34.8438V26.4061H32.0312V23.5935H34.8438V20.781H37.6563Z"
+              fill="white" />
+            <path
+              d="M12.3402 32.0311C8.59015 28.2811 8.59015 21.7185 12.4963 17.9687C15.3089 15.1561 19.3713 14.5312 22.9651 15.9374L24.3713 16.7187L25.9338 17.8125L23.4338 20.3125L22.4963 19.6876C20.3089 18.2814 17.1838 18.5938 15.1527 20.625C12.8089 22.9689 12.6527 27.1876 15.1527 29.6876C17.4965 32.1876 21.7152 32.1876 23.9027 29.6876C24.5276 29.0627 25.1527 28.125 25.3089 27.1876V26.875H19.684V23.7501H28.5902L28.7463 24.5314V26.7189C28.5902 28.7501 27.8089 30.7814 26.4025 32.1876C22.6527 35.7811 16.0902 35.7811 12.3402 32.0311Z"
+              fill="white" />
+          </g>
+          <defs>
+            <clipPath id="clip0_20756_3061">
+              <rect width="50" height="50" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+    </div>
+    <div class="modal__noacc">
+      Нет аккаунта? <a href="#">Зарегистрироваться</a>
+    </div>
+  </form>
+</div>
+      <div class="modal-signin modal">
+  <form action="#" class="modal__body form">
+    <span class="modal__title">Регистрация</span>
+
+    <div class="modal__role">
+      <input id="customer" type="radio" class="visually-hidden" name="role">
+      <label for="customer">
+        <div class="btn--gray btn-reset">Я покупатель</div>
+      </label>
+      <input id="worker" type="radio" class="visually-hidden" name="role">
+      <label for="worker">
+        <div class="btn--gray btn-reset">Я продавец</div>
+      </label>
+    </div>
+    <label class="form__label" style="position: relative;">
+      <input type="email" class="form__input" placeholder="Электронная почта">
+    </label>
+    <button class="btn form__btn modal__btn modal-login__btn btn-reset signin2-btn">Далее</button>
+    <div class="form__row">
+      <label>
+        <input type="checkbox"> Я ознакомлен(а), понимаю и принимаю Пользовательское соглашение, Политику
+        конфиденцыальности и согласен(а) на получение email-рассылок
+      </label>
+    </div>
+
+    <span class="modal__or">или</span>
+    <div class="modal__links">
+      <a href="#">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z"
+            fill="#4065D6" />
+          <path
+            d="M36.5313 32.1446C35.9457 32.2269 33.1003 32.1446 32.9523 32.1446C32.2167 32.1521 31.5077 31.8697 30.9786 31.3584C30.3767 30.7795 29.8339 30.1413 29.2582 29.5394C29.0835 29.3559 28.8955 29.1854 28.6957 29.0295C28.2253 28.6709 27.7615 28.7532 27.5411 29.3058C27.3685 29.9048 27.2496 30.518 27.1859 31.138C27.1756 31.3992 27.0621 31.6457 26.8703 31.8233C26.6785 32.0009 26.4241 32.0952 26.1628 32.0854C25.7747 32.1051 25.3865 32.115 25.0017 32.1051C23.6016 32.0979 22.2231 31.7597 20.9786 31.1183C19.6351 30.3675 18.4641 29.3433 17.5411 28.1117C16.0644 26.1618 14.7882 24.0679 13.7319 21.8617C13.676 21.7499 12.5674 19.3913 12.5411 19.2828C12.4724 19.1282 12.4658 18.9531 12.5228 18.7939C12.5798 18.6346 12.6959 18.5034 12.8471 18.4275C13.0444 18.3519 16.699 18.4275 16.7582 18.4275C17.0304 18.4249 17.2962 18.5094 17.517 18.6686C17.7377 18.8278 17.9018 19.0533 17.9852 19.3124C18.6611 21.0355 19.5842 22.6511 20.7253 24.1084C20.8845 24.3048 21.0719 24.4767 21.2813 24.6183C21.3352 24.6704 21.4021 24.7071 21.4751 24.7247C21.548 24.7423 21.6243 24.74 21.6961 24.7182C21.7678 24.6964 21.8325 24.6559 21.8833 24.6007C21.9342 24.5455 21.9693 24.4778 21.9852 24.4045C22.1298 23.9289 22.2149 23.4372 22.2385 22.9407C22.2582 21.9538 22.2385 21.2959 22.1826 20.3091C22.2025 19.9728 22.0889 19.6422 21.8666 19.3891C21.6443 19.136 21.3311 18.9808 20.9951 18.9571C20.7056 18.9078 20.6661 18.6709 20.8668 18.4341C21.2517 17.944 21.7846 17.865 22.3635 17.8354C23.2385 17.7861 24.1168 17.8354 24.9951 17.8354H25.1859C25.5715 17.8344 25.9562 17.873 26.3339 17.9505C26.5548 17.9958 26.7551 18.1112 26.9051 18.2795C27.055 18.4478 27.1466 18.6601 27.1661 18.8847C27.2105 19.1333 27.2303 19.3856 27.2253 19.638C27.2023 20.7137 27.1497 21.7894 27.1365 22.8683C27.1287 23.2945 27.1673 23.7202 27.2517 24.138C27.3799 24.7104 27.7714 24.8551 28.1727 24.4374C28.6728 23.9006 29.1314 23.3266 29.5444 22.7203C30.2871 21.6163 30.8987 20.4296 31.3668 19.1841C31.6201 18.5459 31.8142 18.4045 32.5017 18.4045H36.3799C36.6114 18.4006 36.842 18.4317 37.0642 18.4966C37.1426 18.5175 37.2158 18.5543 37.2794 18.6047C37.343 18.6551 37.3956 18.718 37.4338 18.7896C37.4721 18.8612 37.4952 18.9398 37.5018 19.0207C37.5084 19.1016 37.4982 19.1829 37.4721 19.2597C37.2453 20.085 36.8561 20.8566 36.3273 21.5295C35.5378 22.6446 34.7089 23.7334 33.8997 24.819C33.7973 24.961 33.7039 25.1093 33.6201 25.263C33.3174 25.8091 33.3405 26.1183 33.778 26.5788C34.4819 27.3025 35.2352 27.9834 35.9128 28.7269C36.4126 29.2686 36.8639 29.853 37.2615 30.4736C37.7615 31.2762 37.4556 32.013 36.5313 32.1446Z"
+            fill="white" />
+        </svg>
+      </a>
+      <a href="#">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_20756_3061)">
+            <path
+              d="M25 0C38.75 0 50 11.25 50 25C50 38.75 38.75 50 25 50C11.25 50 0 38.7498 0 25C0 11.2502 11.25 0 25 0Z"
+              fill="#DD4B39" />
+            <path
+              d="M37.6563 20.781V23.5935H40.4687V26.4061H37.6563V29.2186H34.8438V26.4061H32.0312V23.5935H34.8438V20.781H37.6563Z"
+              fill="white" />
+            <path
+              d="M12.3402 32.0311C8.59015 28.2811 8.59015 21.7185 12.4963 17.9687C15.3089 15.1561 19.3713 14.5312 22.9651 15.9374L24.3713 16.7187L25.9338 17.8125L23.4338 20.3125L22.4963 19.6876C20.3089 18.2814 17.1838 18.5938 15.1527 20.625C12.8089 22.9689 12.6527 27.1876 15.1527 29.6876C17.4965 32.1876 21.7152 32.1876 23.9027 29.6876C24.5276 29.0627 25.1527 28.125 25.3089 27.1876V26.875H19.684V23.7501H28.5902L28.7463 24.5314V26.7189C28.5902 28.7501 27.8089 30.7814 26.4025 32.1876C22.6527 35.7811 16.0902 35.7811 12.3402 32.0311Z"
+              fill="white" />
+          </g>
+          <defs>
+            <clipPath id="clip0_20756_3061">
+              <rect width="50" height="50" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+    </div>
+    <div class="modal__noacc">
+      Нет аккаунта? <a href="#">Зарегистрироваться</a>
+    </div>
+  </form>
+</div>
+      <div class="modal-signin2 modal">
+  <form action="#" class="modal__body form">
+    <span class="modal__title">Регистрация</span>
+    <label class="form__label" style="position: relative;">
+      <input type="text" class="form__input" placeholder="Логин">
+      <button class="btn-reset form__eye">
+        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_20756_3011)">
+            <path
+              d="M11.7802 7.78025L10.0605 9.5L11.7802 11.2198C12.0735 11.513 12.0735 11.987 11.7802 12.2802C11.634 12.4265 11.442 12.5 11.25 12.5C11.058 12.5 10.866 12.4265 10.7198 12.2802L9 10.5605L7.28025 12.2802C7.134 12.4265 6.942 12.5 6.75 12.5C6.558 12.5 6.366 12.4265 6.21975 12.2802C5.9265 11.987 5.9265 11.513 6.21975 11.2198L7.9395 9.5L6.21975 7.78025C5.9265 7.487 5.9265 7.013 6.21975 6.71975C6.513 6.4265 6.987 6.4265 7.28025 6.71975L9 8.4395L10.7198 6.71975C11.013 6.4265 11.487 6.4265 11.7802 6.71975C12.0735 7.013 12.0735 7.487 11.7802 7.78025ZM18 9.5C18 14.4628 13.9628 18.5 9 18.5C4.03725 18.5 0 14.4628 0 9.5C0 4.53725 4.03725 0.5 9 0.5C13.9628 0.5 18 4.53725 18 9.5ZM16.5 9.5C16.5 5.3645 13.1355 2 9 2C4.8645 2 1.5 5.3645 1.5 9.5C1.5 13.6355 4.8645 17 9 17C13.1355 17 16.5 13.6355 16.5 9.5Z"
+              fill="#BEC2CF" />
+          </g>
+          <defs>
+            <clipPath id="clip0_20756_3011">
+              <rect width="18" height="18" fill="white" transform="translate(0 0.5)" />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+    </label>
+    <label class="form__label" style="position: relative;">
+      <input type="password" class="form__input" placeholder="Пароль">
+      <button class="btn-reset form__eye">
+        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_20756_3013)">
+            <path
+              d="M17.4566 7.56421C16.2933 5.66971 13.6473 2.49121 9.00333 2.49121C4.35933 2.49121 1.71333 5.66971 0.550084 7.56421C0.19048 8.14584 0 8.81614 0 9.49996C0 10.1838 0.19048 10.8541 0.550084 11.4357C1.71333 13.3302 4.35933 16.5087 9.00333 16.5087C13.6473 16.5087 16.2933 13.3302 17.4566 11.4357C17.8162 10.8541 18.0067 10.1838 18.0067 9.49996C18.0067 8.81614 17.8162 8.14584 17.4566 7.56421ZM16.1778 10.6505C15.1788 12.275 12.9176 15.0087 9.00333 15.0087C5.08908 15.0087 2.82783 12.275 1.82883 10.6505C1.61519 10.3047 1.50202 9.90637 1.50202 9.49996C1.50202 9.09356 1.61519 8.69518 1.82883 8.34946C2.82783 6.72496 5.08908 3.99121 9.00333 3.99121C12.9176 3.99121 15.1788 6.72196 16.1778 8.34946C16.3915 8.69518 16.5046 9.09356 16.5046 9.49996C16.5046 9.90637 16.3915 10.3047 16.1778 10.6505Z"
+              fill="#BEC2CF" />
+            <path
+              d="M9 5.75C8.25832 5.75 7.5333 5.96993 6.91661 6.38199C6.29993 6.79404 5.81928 7.37971 5.53545 8.06494C5.25162 8.75016 5.17736 9.50416 5.32206 10.2316C5.46675 10.959 5.8239 11.6272 6.34835 12.1517C6.8728 12.6761 7.54098 13.0333 8.26841 13.1779C8.99584 13.3226 9.74984 13.2484 10.4351 12.9645C11.1203 12.6807 11.706 12.2001 12.118 11.5834C12.5301 10.9667 12.75 10.2417 12.75 9.5C12.7488 8.5058 12.3533 7.55267 11.6503 6.84966C10.9473 6.14666 9.9942 5.75119 9 5.75ZM9 11.75C8.55499 11.75 8.11998 11.618 7.74997 11.3708C7.37996 11.1236 7.09157 10.7722 6.92127 10.361C6.75098 9.9499 6.70642 9.4975 6.79323 9.06105C6.88005 8.62459 7.09434 8.22368 7.40901 7.90901C7.72368 7.59434 8.12459 7.38005 8.56105 7.29323C8.99751 7.20642 9.44991 7.25097 9.86104 7.42127C10.2722 7.59157 10.6236 7.87996 10.8708 8.24997C11.118 8.61998 11.25 9.05499 11.25 9.5C11.25 10.0967 11.0129 10.669 10.591 11.091C10.169 11.5129 9.59674 11.75 9 11.75Z"
+              fill="#BEC2CF" />
+          </g>
+          <defs>
+            <clipPath id="clip0_20756_3013">
+              <rect width="18" height="18" fill="white" transform="translate(0 0.5)" />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+    </label>
+    <button class="btn form__btn modal__btn modal-login__btn btn-reset">Зарегестрироваться</button>
+
+    <div class="modal__noacc">
+      Уже зарегистрирован? <a href="#">Войти</a>
+    </div>
+  </form>
+</div>
+      <div class="modal-tel modal">
+  <form action="#" class="modal__body form">
+    <span class="modal__title">Укажите новый номер</span>
+    <span class="modal__subtitle">Укажите новый номер</span>
+    <label class="form__label" style="position: relative;">
+      <input type="tel" class="form__input" placeholder="+7 (___) ___ - __ - __">
+    </label>
+
+    <button class="btn form__btn modal__btn modal-login__btn btn-reset">Получить звонок с кодом</button>
+  </form>
+</div>
+      <div class="modal-payment modal">
+  <form action="#" class="modal__body form">
+    <span class="modal__title">Пополнение баланса</span>
+    <span class="modal__subtitle">Пополняйте с запасом, чтобы всегда заказывать в один клик</span>
+    <label class="form__label">
+      <div class="form__capture">Способ оплаты:</div>
+      <div class="form__select" style="position: relative;">
+        <div class="custom-select">
+          <select id="select-payment" class="visually-hidden select">
+            <option value="Банковская карта РФ">Банковская карта РФ</option>
+            <option value="Банковская карта РФ">Банковская карта РФ</option>
+            <option value="Банковская карта РФ">Банковская карта РФ</option>
+          </select>
+          <div class="custom-select__header custom-select__item"><span>Банковская карта РФ</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_20928_8360)">
+                <path
+                  d="M6.708 10.1466L1.11838 4.55676C0.762626 4.20118 0.762626 3.62467 1.11838 3.26926C1.47381 2.91383 2.05029 2.91383 2.4057 3.26926L7.35166 8.21538L12.2974 3.26941C12.653 2.91397 13.2294 2.91397 13.5849 3.26941C13.9405 3.62484 13.9405 4.20132 13.5849 4.5569L7.99517 10.1467C7.81737 10.3244 7.58458 10.4132 7.35168 10.4132C7.11867 10.4132 6.88571 10.3243 6.708 10.1466Z"
+                  fill="#101010" />
+              </g>
+              <defs>
+                <clipPath id="clip0_20928_8360">
+                  <rect width="13" height="13" fill="white" transform="translate(13.8516 0.208008) rotate(90)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="custom-select__dropdown">
+            <div class="custom-select__item">Банковская карта РФ</div>
+            <div class="custom-select__item">Банковская карта РФ</div>
+            <div class="custom-select__item">Банковская карта РФ</div>
+          </div>
+        </div>
+      </div>
+    </label>
+    <label class="form__label">
+      <div class="form__capture">Сумма, руб.:</div>
+      <div class="form__input-wrapper" style="position: relative;">
+        <input type="text" class="form__input" placeholder="10 000">
+        <button class="btn-reset form__eye">
+          <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_20756_3011)">
+              <path
+                d="M11.7802 7.78025L10.0605 9.5L11.7802 11.2198C12.0735 11.513 12.0735 11.987 11.7802 12.2802C11.634 12.4265 11.442 12.5 11.25 12.5C11.058 12.5 10.866 12.4265 10.7198 12.2802L9 10.5605L7.28025 12.2802C7.134 12.4265 6.942 12.5 6.75 12.5C6.558 12.5 6.366 12.4265 6.21975 12.2802C5.9265 11.987 5.9265 11.513 6.21975 11.2198L7.9395 9.5L6.21975 7.78025C5.9265 7.487 5.9265 7.013 6.21975 6.71975C6.513 6.4265 6.987 6.4265 7.28025 6.71975L9 8.4395L10.7198 6.71975C11.013 6.4265 11.487 6.4265 11.7802 6.71975C12.0735 7.013 12.0735 7.487 11.7802 7.78025ZM18 9.5C18 14.4628 13.9628 18.5 9 18.5C4.03725 18.5 0 14.4628 0 9.5C0 4.53725 4.03725 0.5 9 0.5C13.9628 0.5 18 4.53725 18 9.5ZM16.5 9.5C16.5 5.3645 13.1355 2 9 2C4.8645 2 1.5 5.3645 1.5 9.5C1.5 13.6355 4.8645 17 9 17C13.1355 17 16.5 13.6355 16.5 9.5Z"
+                fill="#BEC2CF" />
+            </g>
+            <defs>
+              <clipPath id="clip0_20756_3011">
+                <rect width="18" height="18" fill="white" transform="translate(0 0.5)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </div>
+    </label>
+
+    <button class="btn form__btn modal__btn modal-login__btn btn-reset">Перейти к оплате</button>
+
+  </form>
+</div>
     </main>
     <footer class="footer">
   <div class="container">
     <div class="footer__top">
       <div class="footer__col">
-        <a href="./" class="header__logo footer__logo">buyme.<span>rpo</span></a>
+        <a href="./" class="header__logo footer__logo">
+          <img src="./img/logo.svg" alt="">
+        </a>
       </div>
       <nav class="footer__nav footer-nav">
         <ul class="list-reset footer-nav__list">

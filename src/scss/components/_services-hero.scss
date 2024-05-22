@@ -3,12 +3,46 @@
 
   &__tabs {
     display: flex;
+    align-items: stretch;
     gap: 20px;
     padding-top: 30px;
     padding-bottom: 80px;
 
+    @include tablet {
+      gap: 0;
+      padding-bottom: 45px;
+    }
+
+    .swiper-slide {
+      box-sizing: border-box;
+      width: auto;
+      height: auto;
+    }
+
     .tab {
+      display: block;
       flex: 1;
+
+      @include tablet {
+        flex: 1 0 auto;
+        padding: 20px 0;
+        width: 150px;
+        box-shadow: 0 4px 13px 0 rgba(30, 35, 66, 0.11);
+        background: #fff;
+        border-radius: 13px;
+      }
+
+      .per-item__content {
+        @include small-tablet {
+          flex-direction: column;
+        }
+      }
+
+      .per-item__title {
+        @include tablet {
+          font-size: 13px;
+        }
+      }
     }
   }
 
@@ -41,6 +75,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+
+    @include small-tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
   }
 
 }

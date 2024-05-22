@@ -12,9 +12,79 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_sliders_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/sliders.js */ "./src/js/components/sliders.js");
 /* harmony import */ var _components_tabs_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/tabs.js */ "./src/js/components/tabs.js");
 /* harmony import */ var _components_settings_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/settings.js */ "./src/js/components/settings.js");
+/* harmony import */ var _components_accord_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/accord.js */ "./src/js/components/accord.js");
+/* harmony import */ var _components_modals_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/modals.js */ "./src/js/components/modals.js");
 
 
 
+
+
+
+/***/ }),
+
+/***/ "./src/js/components/accord.js":
+/*!*************************************!*\
+  !*** ./src/js/components/accord.js ***!
+  \*************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+const accordItems = document.querySelectorAll("[data-accord]");
+accordItems.forEach(item => {
+  const btn = item.querySelector("[data-accord-btn]");
+  const content = item.querySelector("[data-accord-content]");
+  if (item.classList.contains("active")) {
+    content.style.maxHeight = content.scrollHeight + "px";
+  }
+  btn.addEventListener("click", e => {
+    let isActive = item.classList.toggle("active");
+    content.style.maxHeight = isActive ? content.scrollHeight + "px" : null;
+  });
+});
+
+/***/ }),
+
+/***/ "./src/js/components/modals.js":
+/*!*************************************!*\
+  !*** ./src/js/components/modals.js ***!
+  \*************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+const modalLogin = document.querySelector(".modal-login");
+const modalSignin = document.querySelector(".modal-signin");
+const modalPayment = document.querySelector(".modal-payment");
+const loginBtn = document.querySelector(".login-btn");
+const signInBtn = document.querySelector(".signin-btn");
+const paymentBtn = document.querySelector(".payment-btn");
+const modals = document.querySelectorAll(".modal");
+loginBtn?.addEventListener("click", e => {
+  e.preventDefault();
+  modalLogin.classList.add("active");
+});
+paymentBtn?.addEventListener("click", e => {
+  e.preventDefault();
+  modalPayment.classList.add("active");
+});
+signInBtn?.addEventListener("click", e => {
+  e.preventDefault();
+  modalSignin.classList.add("active");
+  const signInBtn2 = document.querySelector(".signin2-btn");
+  const modalSignin2 = document.querySelector(".modal-signin2");
+  signInBtn2.addEventListener("click", e => {
+    modalSignin.classList.remove("active");
+    modalSignin2.classList.add("active");
+  });
+});
+modals.forEach(el => {
+  const body = el.querySelector(".modal__body");
+  el.addEventListener("click", e => {
+    el.classList.remove("active");
+  });
+  body.addEventListener("click", e => {
+    e.stopPropagation();
+  });
+});
 
 /***/ }),
 
@@ -79,6 +149,10 @@ window.addEventListener("DOMContentLoaded", () => {
   resizableSwiper("(max-width: 768px)", ".blog__slider", {
     spaceBetween: 30,
     slidesPerView: "auto"
+  });
+  resizableSwiper("(max-width: 1024px)", ".services-hero__slider", {
+    slidesPerView: "auto",
+    spaceBetween: 10
   });
 });
 
@@ -4618,6 +4692,32 @@ menu.addEventListener("click", e => {
 menuBody.addEventListener("click", e => {
   e.preventDefault();
   e.stopPropagation();
+});
+const select = document.querySelectorAll(".custom-select");
+if (select && select.length > 0) {
+  select.forEach(s => {
+    const rSelect = s.querySelector("select");
+    const btn = s.querySelector(".custom-select__header");
+    btn.addEventListener("click", e => {
+      let isActive = btn.classList.toggle("active");
+      const dropdown = s.querySelector(".custom-select__dropdown");
+      const items = dropdown.querySelectorAll(".custom-select__item");
+      dropdown.style.maxHeight = isActive ? dropdown.scrollHeight + "px" : null;
+      items.forEach(item => {
+        item.addEventListener("click", el => {
+          rSelect.value = el.currentTarget.textContent;
+          btn.querySelector("span").textContent = el.currentTarget.textContent;
+          dropdown.style.maxHeight = null;
+          btn.classList.remove("active");
+        });
+      });
+    });
+  });
+}
+const accInfoBtn = document.querySelector(".acc-info");
+accInfoBtn?.addEventListener("click", e => {
+  const data = document.querySelector(".header-data");
+  data.classList.toggle("active");
 });
 })();
 

@@ -18,7 +18,7 @@
 </head>
 
 <body class="page__body">
-  <div class="site-container">
+  <div class="site-container blue-bg">
     <header class="header">
   <div class="container header__container">
     <div class="header__left">
@@ -38,7 +38,7 @@
     </div>
 
     <div class="header__right">
-      <a href="#" class="header__link">
+      <a href="#" class="header__link login-btn">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_20624_667)">
             <path
@@ -53,7 +53,7 @@
         <span>Войти</span>
       </a>
 
-      <a href="#" class="header__link">
+      <a href="#" class="header__link signin-btn">
         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_20624_663)">
             <path
@@ -225,7 +225,9 @@
       <div class="header-mob__burger">
         <div class="line"></div>
       </div>
-      <a href="#" class="header__logo">buyme.<span>rpo</span></a>
+      <a href="#" class="header__logo">
+        <img src="./img/logo.svg" alt="">
+      </a>
     </div>
     <div class="header-mob__right">
       <a href="#" class="header-mob__link">
@@ -270,196 +272,154 @@
     </div>
   </div>
 </header>
-    <main class="main">
-      <section class="settings-main">
-  <div class="container">
-    <h2 class="title2 settings-main__title">Настройки</h2>
-    <div class="settings-main__options">
-      <div class="settings-main__item active" data-settings="general">
-        Общие настройки
-      </div>
-      <div class="settings-main__item" data-settings="safety">
-        Безопасность
-      </div>
-      <div class="settings-main__item" data-settings="payment">
-        Платежные данные
-      </div>
-    </div>
+    <div class="grid-container container">
+      <main class="main">
+        <div class="profile-section">
+          <h2 class="title2 profile-section__title">Мой профиль</h2>
+          <div class="profile-section__item profile-item">
+            <div class="profile-item__header">
+              <span class="profile-item__capture">Портфолио</span>
+              <span class="profile-item__value">0 работ</span>
+            </div>
+          </div>
+          <div class="profile-section__item profile-item">
+            <div class="profile-item__header">
+              <span class="profile-item__capture">Мои заказы</span>
+              <span class="profile-item__value">0 заказов</span>
+            </div>
+          </div>
+          <div class="profile-section__item profile-item active" data-accord>
+            <div class="profile-item__header" data-accord-btn>
+              <span class="profile-item__capture">Новое на бирже - <a href="#">124 проекта</a></span>
 
-    <form action="post" class="form settings-general settings-main__content active" data-settings-content="general">
-  <div class="settings-general__image settings-image">
-    <label for="input-image" class="settings-image__label">
-      <div class="settings-image__file">
-        <img src="" alt="">
-        <div class="settings-image__plus">
-          <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_20842_1476)">
-              <path
-                d="M31.4999 0C14.1308 0 0 14.1308 0 31.4999C0 48.8689 14.1308 62.9998 31.4999 62.9998C48.8689 62.9998 62.9998 48.869 62.9998 31.4999C62.9998 14.1307 48.8689 0 31.4999 0ZM31.4999 59.0623C16.302 59.0623 3.9375 46.6978 3.9375 31.4999C3.9375 16.302 16.302 3.9375 31.4999 3.9375C46.6978 3.9375 59.0623 16.3019 59.0623 31.4999C59.0623 46.6978 46.6978 59.0623 31.4999 59.0623ZM48.9725 31.4999C48.9725 32.5872 48.091 33.4686 47.0038 33.4686H33.4686V47.0038C33.4686 48.0911 32.5871 48.9725 31.4999 48.9725C30.4126 48.9725 29.5311 48.0911 29.5311 47.0038V33.4686H15.996C14.9087 33.4686 14.0272 32.5872 14.0272 31.4999C14.0272 30.4125 14.9087 29.5311 15.996 29.5311H29.5311V15.996C29.5311 14.9086 30.4126 14.0272 31.4999 14.0272C32.5871 14.0272 33.4686 14.9086 33.4686 15.996V29.5311H47.0038C48.091 29.5311 48.9725 30.4126 48.9725 31.4999Z"
-                fill="#D5D8E0" />
-            </g>
-            <defs>
-              <clipPath id="clip0_20842_1476">
-                <rect width="63" height="63" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
+              <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_20755_2931)">
+                  <path
+                    d="M5.85643 3.76945L0.266814 9.35926C-0.0889369 9.71484 -0.0889368 10.2913 0.266814 10.6468C0.622249 11.0022 1.19873 11.0022 1.55413 10.6468L6.50009 5.70064L11.4459 10.6466C11.8015 11.002 12.3779 11.002 12.7333 10.6466C13.0889 10.2912 13.0889 9.71469 12.7333 9.35911L7.14361 3.76931C6.96581 3.59159 6.73302 3.50283 6.50012 3.50283C6.26711 3.50283 6.03415 3.59176 5.85643 3.76945Z"
+                    fill="#101010" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_20755_2931">
+                    <rect width="13" height="13" fill="white"
+                      transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 13 13.708)" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+            </div>
+            <div class="profile-item__body market" data-accord-content>
+              <a href="#" class="market__item">
+                <div class="market__left">
+                  <div class="market__worker">
+                    <img src="./img/avatars/09.png" alt="">
+                    <span class="market__name">Сименов Петр</span>
+                  </div>
+                  <span class="market__title">Верстка фигмы сайта для бренда одежды</span>
+                  <ul class="list-reset breadcrumbs market__list">
+                    <li class="breadcrumbs__item">SEO и трафик</li>
+                    <li class="breadcrumbs__item">SEO аудиты, консультации</li>
+                    <li class="breadcrumbs__item">SEO аудит</li>
+                  </ul>
+                </div>
+
+                <span class="market__price">2 000 руб.</span>
+              </a>
+              <a href="#" class="market__item">
+                <div class="market__left">
+                  <div class="market__worker">
+                    <img src="./img/avatars/09.png" alt="">
+                    <span class="market__name">Сименов Петр</span>
+                  </div>
+                  <span class="market__title">Верстка фигмы сайта для бренда одежды</span>
+                  <ul class="list-reset breadcrumbs market__list">
+                    <li class="breadcrumbs__item">SEO и трафик</li>
+                    <li class="breadcrumbs__item">SEO аудиты, консультации</li>
+                    <li class="breadcrumbs__item">SEO аудит</li>
+                  </ul>
+                </div>
+
+                <span class="market__price">2 000 руб.</span>
+              </a>
+              <a href="#" class="market__item">
+                <div class="market__left">
+                  <div class="market__worker">
+                    <img src="./img/avatars/09.png" alt="">
+                    <span class="market__name">Сименов Петр</span>
+                  </div>
+                  <span class="market__title">Верстка фигмы сайта для бренда одежды</span>
+                  <ul class="list-reset breadcrumbs market__list">
+                    <li class="breadcrumbs__item">SEO и трафик</li>
+                    <li class="breadcrumbs__item">SEO аудиты, консультации</li>
+                    <li class="breadcrumbs__item">SEO аудит</li>
+                  </ul>
+                </div>
+
+                <span class="market__price">2 000 руб.</span>
+              </a>
+              <a href="#" class="market__item">
+                <div class="market__left">
+                  <div class="market__worker">
+                    <img src="./img/avatars/09.png" alt="">
+                    <span class="market__name">Сименов Петр</span>
+                  </div>
+                  <span class="market__title">Верстка фигмы сайта для бренда одежды</span>
+                  <ul class="list-reset breadcrumbs market__list">
+                    <li class="breadcrumbs__item">SEO и трафик</li>
+                    <li class="breadcrumbs__item">SEO аудиты, консультации</li>
+                    <li class="breadcrumbs__item">SEO аудит</li>
+                  </ul>
+                </div>
+
+                <span class="market__price">2 000 руб.</span>
+              </a>
+              <a href="#" class="market__item">
+                <div class="market__left">
+                  <div class="market__worker">
+                    <img src="./img/avatars/09.png" alt="">
+                    <span class="market__name">Сименов Петр</span>
+                  </div>
+                  <span class="market__title">Верстка фигмы сайта для бренда одежды</span>
+                  <ul class="list-reset breadcrumbs market__list">
+                    <li class="breadcrumbs__item">SEO и трафик</li>
+                    <li class="breadcrumbs__item">SEO аудиты, консультации</li>
+                    <li class="breadcrumbs__item">SEO аудит</li>
+                  </ul>
+                </div>
+
+                <span class="market__price">2 000 руб.</span>
+              </a>
+            </div>
+
+          </div>
         </div>
-      </div>
-      <button class="btn-reset settings-image__btn btn--gray btn">Выбрать фото</button>
-    </label>
-    <input type="file" id="input-image" class="visually-hidden">
-    <span class="settings-image__look">
-      Как выглядит мой профиль <a href="#">Перейти</a>
-    </span>
-  </div>
-
-  <label class="form__label">
-    <span class="form__capture">Логин:</span>
-    <input type="text" class="form__input" placeholder="ivanov1993">
-  </label>
-  <label class="form__label">
-    <span class="form__capture">E-mail:</span>
-    <input type="email" class="form__input" placeholder="ivanov1993@yandex.ru">
-  </label>
-  <label class="form__label">
-    <span class="form__capture">Телефон:</span>
-    <input type="tel" class="form__input" placeholder="+7 (987) 987 60 78">
-  </label>
-  <label class="form__label">
-    <span class="form__capture">Дата рождения:</span>
-    <input type="date" class="form__input" placeholder="21.05.1985">
-  </label>
-
-  <div class="form__row">
-    <span class="form__capture">Пол:</span>
-    <input type="radio" name="sex" id="male" class="visually-hidden">
-    <label for="male" class="form__string">
-      <span class="form__radio"></span>
-      <span class="form__name">Мужчина</span>
-    </label>
-    <input type="radio" name="sex" id="female" class="visually-hidden">
-    <label for="female" class="form__string">
-      <span class="form__radio"></span>
-      <span class="form__name">Женщина</span>
-    </label>
-  </div>
-
-  <label class="form__label">
-    <span class="form__capture">Город:</span>
-    <input type="text" class="form__input" placeholder="Казань">
-  </label>
-
-  <button class="btn-reset btn">Сохранить</button>
-</form>
-    <form class="form settings-safety settings-main__content" data-settings-content="safety">
-  <span class="settings-safety__title">Придумайте новый пароль с такими требованиями:</span>
-  <ul class="settings-safety__list">
-    <li>длина - не менее 8 символов</li>
-    <li>заглавные буквы</li>
-    <li>строчные буквы</li>
-    <li>цифры или специальные символы: %, #, $ и другие</li>
-  </ul>
-  <label class="form__label">
-    <span class="form__capture">Новый пароль:</span>
-    <div class="form__input-wrapper">
-      <input type="password" class="form__input" placeholder="********************">
-      <button class="btn-reset form__eye">
-        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_20842_1738)">
-            <path
-              d="M17.4566 7.56421C16.2933 5.66971 13.6473 2.49121 9.00333 2.49121C4.35933 2.49121 1.71333 5.66971 0.550084 7.56421C0.19048 8.14584 0 8.81614 0 9.49996C0 10.1838 0.19048 10.8541 0.550084 11.4357C1.71333 13.3302 4.35933 16.5087 9.00333 16.5087C13.6473 16.5087 16.2933 13.3302 17.4566 11.4357C17.8162 10.8541 18.0067 10.1838 18.0067 9.49996C18.0067 8.81614 17.8162 8.14584 17.4566 7.56421ZM16.1778 10.6505C15.1788 12.275 12.9176 15.0087 9.00333 15.0087C5.08908 15.0087 2.82783 12.275 1.82883 10.6505C1.61519 10.3047 1.50202 9.90637 1.50202 9.49996C1.50202 9.09356 1.61519 8.69518 1.82883 8.34946C2.82783 6.72496 5.08908 3.99121 9.00333 3.99121C12.9176 3.99121 15.1788 6.72196 16.1778 8.34946C16.3915 8.69518 16.5046 9.09356 16.5046 9.49996C16.5046 9.90637 16.3915 10.3047 16.1778 10.6505Z"
-              fill="#BEC2CF" />
-            <path
-              d="M9 5.75C8.25832 5.75 7.5333 5.96993 6.91661 6.38199C6.29993 6.79404 5.81928 7.37971 5.53545 8.06494C5.25162 8.75016 5.17736 9.50416 5.32206 10.2316C5.46675 10.959 5.8239 11.6272 6.34835 12.1517C6.8728 12.6761 7.54098 13.0333 8.26841 13.1779C8.99584 13.3226 9.74984 13.2484 10.4351 12.9645C11.1203 12.6807 11.706 12.2001 12.118 11.5834C12.5301 10.9667 12.75 10.2417 12.75 9.5C12.7488 8.5058 12.3533 7.55267 11.6503 6.84966C10.9473 6.14666 9.9942 5.75119 9 5.75ZM9 11.75C8.55499 11.75 8.11998 11.618 7.74997 11.3708C7.37996 11.1236 7.09157 10.7722 6.92127 10.361C6.75098 9.9499 6.70642 9.4975 6.79323 9.06105C6.88005 8.62459 7.09434 8.22368 7.40901 7.90901C7.72368 7.59434 8.12459 7.38005 8.56105 7.29323C8.99751 7.20642 9.44991 7.25097 9.86104 7.42127C10.2722 7.59157 10.6236 7.87996 10.8708 8.24997C11.118 8.61998 11.25 9.05499 11.25 9.5C11.25 10.0967 11.0129 10.669 10.591 11.091C10.169 11.5129 9.59674 11.75 9 11.75Z"
-              fill="#BEC2CF" />
-          </g>
-          <defs>
-            <clipPath id="clip0_20842_1738">
-              <rect width="18" height="18" fill="white" transform="translate(0 0.5)" />
-            </clipPath>
-          </defs>
-        </svg>
-      </button>
-    </div>
-  </label>
-  <label class="form__label">
-    <span class="form__capture">Повторите пароль:</span>
-    <div class="form__input-wrapper">
-      <input type="password" class="form__input" placeholder="********************">
-      <button class="btn-reset form__eye">
-        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_20842_1738)">
-            <path
-              d="M17.4566 7.56421C16.2933 5.66971 13.6473 2.49121 9.00333 2.49121C4.35933 2.49121 1.71333 5.66971 0.550084 7.56421C0.19048 8.14584 0 8.81614 0 9.49996C0 10.1838 0.19048 10.8541 0.550084 11.4357C1.71333 13.3302 4.35933 16.5087 9.00333 16.5087C13.6473 16.5087 16.2933 13.3302 17.4566 11.4357C17.8162 10.8541 18.0067 10.1838 18.0067 9.49996C18.0067 8.81614 17.8162 8.14584 17.4566 7.56421ZM16.1778 10.6505C15.1788 12.275 12.9176 15.0087 9.00333 15.0087C5.08908 15.0087 2.82783 12.275 1.82883 10.6505C1.61519 10.3047 1.50202 9.90637 1.50202 9.49996C1.50202 9.09356 1.61519 8.69518 1.82883 8.34946C2.82783 6.72496 5.08908 3.99121 9.00333 3.99121C12.9176 3.99121 15.1788 6.72196 16.1778 8.34946C16.3915 8.69518 16.5046 9.09356 16.5046 9.49996C16.5046 9.90637 16.3915 10.3047 16.1778 10.6505Z"
-              fill="#BEC2CF" />
-            <path
-              d="M9 5.75C8.25832 5.75 7.5333 5.96993 6.91661 6.38199C6.29993 6.79404 5.81928 7.37971 5.53545 8.06494C5.25162 8.75016 5.17736 9.50416 5.32206 10.2316C5.46675 10.959 5.8239 11.6272 6.34835 12.1517C6.8728 12.6761 7.54098 13.0333 8.26841 13.1779C8.99584 13.3226 9.74984 13.2484 10.4351 12.9645C11.1203 12.6807 11.706 12.2001 12.118 11.5834C12.5301 10.9667 12.75 10.2417 12.75 9.5C12.7488 8.5058 12.3533 7.55267 11.6503 6.84966C10.9473 6.14666 9.9942 5.75119 9 5.75ZM9 11.75C8.55499 11.75 8.11998 11.618 7.74997 11.3708C7.37996 11.1236 7.09157 10.7722 6.92127 10.361C6.75098 9.9499 6.70642 9.4975 6.79323 9.06105C6.88005 8.62459 7.09434 8.22368 7.40901 7.90901C7.72368 7.59434 8.12459 7.38005 8.56105 7.29323C8.99751 7.20642 9.44991 7.25097 9.86104 7.42127C10.2722 7.59157 10.6236 7.87996 10.8708 8.24997C11.118 8.61998 11.25 9.05499 11.25 9.5C11.25 10.0967 11.0129 10.669 10.591 11.091C10.169 11.5129 9.59674 11.75 9 11.75Z"
-              fill="#BEC2CF" />
-          </g>
-          <defs>
-            <clipPath id="clip0_20842_1738">
-              <rect width="18" height="18" fill="white" transform="translate(0 0.5)" />
-            </clipPath>
-          </defs>
-        </svg>
-      </button>
-    </div>
-  </label>
-  <button class="btn-reset btn form__btn">Сохранить новый пароль</button>
-</form>
-    <form class="form settings-payment settings-main__content" data-settings-content="payment">
-  <span class="settings-payment__desc">
-    Есть много различных платежных систем, и выбор зависит от различных факторов, таких как услуг, которые вы
-    предлагаете:
-  </span>
-
-  <label class="form__label settings-payment__label">
-    <span class="form__capture">Банковская карта:</span>
-    <div class="form__input-wrapper form__input-wrapper--long">
-      <input type="text" class="form__input" placeholder="Введите номер карты. Например: 1234 5678 9012 3456">
-      <div class="form__cards">
-        <img src="./img/visa.png" alt="">
-        <img src="./img/mastercard.png" alt="">
-        <img src="./img/mir.png" alt="">
-      </div>
-    </div>
-  </label>
-  <label class="form__label settings-payment__label">
-    <span class="form__capture">Чеки о пополнениях:</span>
-    <input type="checkbox" id="checks" class="visually-hidden form__rcheck">
-    <label for="checks" class="form__string">
-      <span class="form__checkbox">
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M5.03679 12.0368C4.75274 12.0368 4.46839 11.9284 4.2517 11.7116L0.325284 7.78514C-0.108428 7.35143 -0.108428 6.64836 0.325284 6.21465C0.758996 5.78094 1.46206 5.78094 1.89578 6.21465L5.03679 9.35567L12.1042 2.28837C12.5379 1.85479 13.2412 1.85466 13.6746 2.28837C14.1084 2.72208 14.1084 3.42531 13.6746 3.85886L5.82206 11.7116C5.6052 11.9283 5.32098 12.0368 5.03679 12.0368Z"
-            fill="#101010" />
-        </svg>
-      </span>
-      <span class="form__name">Отображать чеки о поплнениях банковской картой на странице финстатистики</span>
-    </label>
-
-  </label>
-  <button class="btn btn-reset form__btn">Сохранить кошельки</button>
-</form>
-  </div>
-</section>
-    </main>
-    <aside class="aside">
-      <div class="aside__info">
-        <div class="aside__avatar">
-          <img src="./img/avatars/05.png" alt="">
+      </main>
+      <aside class="aside">
+        <div class="aside__info">
+          <div class="aside__avatar">
+            <img src="./img/avatars/09.png" alt="">
+          </div>
+          <span class="aside__name">Alexmedia</span>
+          <span class="aside__role">Продавец</span>
+          <a href="#" class="aside__edit">Редактировать профиль</a>
         </div>
-        <span class="aside__name">Alexmedia</span>
-        <span class="aside__role">Продавец</span>
-        <a href="#" class="aside__edit">Редактировать профиль</a>
-      </div>
-    </aside>
+        <div class="aside__video video">
+          <video src="" poster="./img/video-poster.jpg"></video>
+          <span class="video__capture">Как получать задания</span>
+          <button class="btn-reset video__btn">
+            <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 9.5L-8.15666e-07 18.1603L-5.85621e-08 0.839745L15 9.5Z" fill="#6FC727" />
+            </svg>
+          </button>
+        </div>
+      </aside>
+    </div>
     <footer class="footer">
   <div class="container">
     <div class="footer__top">
       <div class="footer__col">
-        <a href="./" class="header__logo footer__logo">buyme.<span>rpo</span></a>
+        <a href="./" class="header__logo footer__logo">
+          <img src="./img/logo.svg" alt="">
+        </a>
       </div>
       <nav class="footer__nav footer-nav">
         <ul class="list-reset footer-nav__list">
